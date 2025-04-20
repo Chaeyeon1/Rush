@@ -27,14 +27,14 @@ public class PlayerMovement : NetworkBehaviour
     void Update()
     {
         float move = Input.GetAxisRaw("Horizontal");
-        rb.velocity = new Vector2(move * moveSpeed, rb.velocity.y);
+        rb.linearVelocity = new Vector2(move * moveSpeed, rb.linearVelocity.y);
 
         // 바닥 체크
         isGrounded = Physics2D.Raycast(transform.position, Vector2.down, 1.1f, groundLayer);
 
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
         {
-            rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
         }
     }
 }
