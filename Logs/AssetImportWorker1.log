@@ -258,25 +258,17 @@ Memory consumption went from 177.3 MB to 167.5 MB.
 Total: 8.593750 ms (FindLiveObjects: 0.349500 ms CreateObjectMapping: 0.236583 ms MarkObjects: 4.881458 ms  DeleteObjects: 3.125834 ms)
 
 Prepare: number of updated asset objects reloaded= 0
-ent domain, in  0.684 seconds
-Domain Reload Profiling: 1160ms
-	BeginReloadAssembly (117ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (8ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (48ms)
-	RebuildCommonClasses (26ms)
-	RebuildNativeTypeToScriptingClass (9ms)
-	initialDomainReloadingComplete (14ms)
-	LoadAllAssembliesAndSetupDomain (310ms)
-		LoadAssemblies (157ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (184ms)
-			TypeCache.Refresh (112ms)
-				TypeCache.ScanAssembly (101ms)
-			BuildScriptInfoCaches (63ms)
-			ResolveRequiredComponents (7ms)
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 0.46 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 51 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7102 unused Assets / (8.5 MB). Loaded Objects now: 7839.
+Memory consumption went from 177.3 MB to 168.8 MB.
+Total: 9.784333 ms (FindLiveObjects: 0.422167 ms CreateObjectMapping: 0.260417 ms MarkObjects: 4.829875 ms  DeleteObjects: 4.271416 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+dComponents (7ms)
 	FinalizeReload (684ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
