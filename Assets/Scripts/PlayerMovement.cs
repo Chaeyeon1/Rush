@@ -9,11 +9,16 @@ public class PlayerMovement : NetworkBehaviour
     public LayerMask groundLayer;
 
     private Rigidbody2D rb;
+    private Animator animator;
+    private SpriteRenderer spriteRenderer;
+
     private bool isGrounded = false;
 
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>(); // 애니메이터 연결
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     public override void OnNetworkSpawn()
@@ -36,5 +41,14 @@ public class PlayerMovement : NetworkBehaviour
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
         }
+
+        // 방향 반전 (←일 때만 뒤집기)
+        if (move != 0)
+        {
+            spriteRenderer.flipX = move < 0;
+        }
+
+        float speed = Mathf.Abs(move * moveSpeed);
+        animator.SetFloat("Speed", speed);
     }
 }

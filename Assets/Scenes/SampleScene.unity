@@ -589,18 +589,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1236477625357631822, guid: 40c94dfd9871e4531bd0a9bfdec66403, type: 3}
-      propertyPath: m_FlipX
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1236477625357631822, guid: 40c94dfd9871e4531bd0a9bfdec66403, type: 3}
-      propertyPath: m_FlipY
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2403496094038603880, guid: 40c94dfd9871e4531bd0a9bfdec66403, type: 3}
-      propertyPath: groundLayer.m_Bits
-      value: 64
-      objectReference: {fileID: 0}
     - target: {fileID: 2478785121613441836, guid: 40c94dfd9871e4531bd0a9bfdec66403, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -645,17 +633,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 8147352254510113584, guid: 40c94dfd9871e4531bd0a9bfdec66403, type: 3}
-      propertyPath: m_Constraints
-      value: 4
-      objectReference: {fileID: 0}
     - target: {fileID: 8787416981758543106, guid: 40c94dfd9871e4531bd0a9bfdec66403, type: 3}
       propertyPath: GlobalObjectIdHash
       value: 3200072457
-      objectReference: {fileID: 0}
-    - target: {fileID: 8787416981758543106, guid: 40c94dfd9871e4531bd0a9bfdec66403, type: 3}
-      propertyPath: InScenePlacedSourceGlobalObjectIdHash
-      value: 3609053573
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
